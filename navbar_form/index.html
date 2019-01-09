@@ -1,0 +1,197 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,minimum-scale=1.0">
+		<title>Navbar& Form</title>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		
+		
+		<style type="text/css">
+			  body{
+				min-height:100rem;
+				padding-top:8.5rem;
+				background-color:rgb(211,217,211);
+				
+			}
+			 .lgnd{
+				width:auto;
+				display:block;
+				padding:0 10px;
+				border-style:none;
+				border-width:3px;
+				font:bold 30px arial;
+				text-align:center;
+				
+			}
+			.fldst{
+				border:2px solid black;
+				width:94%;
+				margin:auto;
+				padding-left:25px;
+				padding-right:25px;
+				background-color:white;
+			}
+			
+			.zz{
+				margin-right:40px;
+			}
+			h3{
+				margin-top:-30px;
+				text-align:center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="navbar navbar-default  navbar-expand-md navbar-fixed-top" role="navigation">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="">WEB</a>
+			<div class="navbar-collapse collapse" id="menu">
+				<ul class="nav navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Homepage
+						</a>
+						<div class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">HTML</a>
+							<a class="dropdown-item" href="#">CSS</a>
+							<a class="dropdown-item" href="#">BOOTSTRAP</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="">Forms</a></li>
+				</ul>
+          </div>
+		</div>
+		
+		<div class="container-fluid">
+			<fieldset class="fldst">
+				<legend class="lgnd">Type of Forms</legend>
+				<hr>
+				<form class="form" role="form">
+					<div class="jumbotron">
+						<h3>login form</h3>
+						<div class="form-row">
+							<div class="form-group zz col-md-3">
+								<label for="email">Email Address</label>
+								<input type="text" class="form-control" id="Email" placeholder="name@example.com"/>
+							</div>
+							<div class="form-group zz col-md-3">
+								<label for="password">Password</label>
+								<input type="text" class="form-control" id="Password" placeholder="********"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-info" name="submit" type="submit">Submit</button>
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<input name="remember" type="checkbox" value="yes"/>Remember	
+							</div>
+						</div>
+					</div>
+					<hr>	
+					<div class="jumbotron">
+						<h3>contact form</h3>
+						<div class="form-row">
+							<div class="form-group zz col-md-3">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="Name" placeholder="enter your name"/>
+							</div>
+							<div class="form-group zz col-md-3">
+								<label for="surname">Surname</label>
+								<input type="text" class="form-control" id="surname" placeholder="enter your surname"/>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group zz col-md-3">
+								<label for="email">Email Address</label>
+								<input type="text" class="form-control" id="Email" placeholder="name@example.com"/>
+							</div>
+							<div class="form-group zz col-md-4">
+								<label for="subject">Subject</label>
+								<input type="text" class="form-control" id="subject"/>		
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-9">
+								<label for="textarea">Message</label>
+								<textarea class="form-control" rows="4"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-info" name="submit" type="submit">Submit</button>
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<input name="remember" type="checkbox" value="yes"/>Remember	
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="jumbotron">
+						<h3>application form</h3>
+						<div class="form-row">
+							<div class="form-group zz col-md-3">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="Name" placeholder="enter your name"/>
+							</div>
+							<div class="form-group zz col-md-3">
+								<label for="surname">Surname</label>
+								<input type="text" class="form-control" id="surname" placeholder="enter your surname"/>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group zz col-md-3">
+								<label for="Dateofbirth">Date of birth</label>
+								<input type="date" class="form-control" id="Dateofbirth"/>
+							</div>
+							<div class="form-group zz col-md-3">
+								<label for="File-upload">File upload</label>
+								<input type="file" class="form-control" id="File-upload"/>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group zz col-md-3">
+								<label for="email">Email Address</label>
+								<input type="text" class="form-control" id="Email" placeholder="name@example.com"/>
+							</div>
+							<div class="form-group zz col-md-3">
+								<label for="password">Password</label>
+								<input type="text" class="form-control" id="Password" placeholder="********"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-info" name="submit" type="submit">Submit</button>
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<input name="remember" type="checkbox" value="yes"/>Remember	
+							</div>
+						</div>
+					</div>
+					<hr>
+					
+				</form>
+			</fieldset>
+		</div>
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
